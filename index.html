@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css 3 types declaration</title>
+    <title>Selectors</title>
     <style>
-        h3{
-            background-color: blue;
+        /* element selector */
+        div{
+            background-color: brown;
         }
+        /* class selector */
+        .red{
+background-color: aqua;
+        }
+        /* id selector*/
+        #green{
+            background-color: blueviolet;
+        }
+        /* child selector*/
+        div>p{
+            color: rgb(222, 25, 166);
+            background-color: chartreuse;
+        }
+        /* descendant selector*/
+        div p{
+            color: rgb(214, 83, 188);
+            border-color: chocolate;
+
+        }
+        /* universal selector*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* psuedo selectors*/
+        a:visited{
+            color: darkblue;
+        }
+        a:link{
+            color: rgb(172, 141, 201);
+        }
+        a:active{
+            background-color: rgb(217, 240, 44);
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: darksalmon;
+        }
+
     </style>
-   <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
-    <span>
-        internal  css,external css
-    </span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, a doloremque. Maiores nesciunt rerum sunt molestiae eos dolore nam dicta, dolorem
-         excepturi, eius eaque, sapiente esse odio praesentium facere veritatis.</p>
-         <h2 style="background-color: aquamarine;">
-External CSS
-         </h2>
-         <h3>
-            internal css
-         </h3>
+    <main class="one">
+        <p>iam one</p>
+        <p>iam two</p>
 
+    </main>
+    <div>
+        Iam a girl
+    </div>
+    <div class="red">
+        my name is samreen.
+    </div>
+    <div id="green">
+        my brother name is sohail.
+    </div>
+    <div>
+        iam a boy
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis vel non nesciunt aliquid ea voluptatum at, delectus velit magni necessitatibus ut labore debitis nostrum?</p>
+    </div>
+    <div>
+        iam sister of sohail.
+        <article>
+            <p> he is angery man.</p>
+        </article>
+    </div>
+    
+        <a href="http://www.snapchat.com"> go to Snapchat</a><br>
+    <a href="htttp://www.Tiktok.com"> go to Tiktok</a>
+
+    
 </body>
 </html>
