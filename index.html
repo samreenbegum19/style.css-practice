@@ -3,84 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors</title>
+    <title>Css boxmodels</title>
     <style>
-        /* element selector */
-        div{
-            background-color: brown;
-        }
-        /* class selector */
-        .red{
-background-color: aqua;
-        }
-        /* id selector*/
-        #green{
-            background-color: blueviolet;
-        }
-        /* child selector*/
-        div>p{
-            color: rgb(222, 25, 166);
-            background-color: chartreuse;
-        }
-        /* descendant selector*/
-        div p{
-            color: rgb(214, 83, 188);
-            border-color: chocolate;
-
-        }
-        /* universal selector*/
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
-        /* psuedo selectors*/
-        a:visited{
-            color: darkblue;
+        .box{
+            background-color:aqua;
         }
-        a:link{
-            color: rgb(172, 141, 201);
+        .box1{
+             color:green;
+             padding: 10px;
+             margin:25px;
+             border: 2px solid black;
+             height: 200px;
+             box-sizing: border-box;
         }
-        a:active{
-            background-color: rgb(217, 240, 44);
-        }
-        a:hover{
-            background-color: aqua;
-        }
-        p:first-child{
-            background-color: darksalmon;
-        }
-
+.box2{
+  color: brown;
+   color:green;
+             padding: 10px;
+             margin: 25px;
+             border: 2px solid black;
+             height: 200px;
+             box-sizing: border-box;
+  
+}        
     </style>
 </head>
 <body>
-    <main class="one">
-        <p>iam one</p>
-        <p>iam two</p>
-
-    </main>
-    <div>
-        Iam a girl
+    <div class="box box1 ">
+Iam samreen begum.
     </div>
-    <div class="red">
-        my name is samreen.
-    </div>
-    <div id="green">
-        my brother name is sohail.
-    </div>
-    <div>
-        iam a boy
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis vel non nesciunt aliquid ea voluptatum at, delectus velit magni necessitatibus ut labore debitis nostrum?</p>
-    </div>
-    <div>
-        iam sister of sohail.
-        <article>
-            <p> he is angery man.</p>
-        </article>
-    </div>
-    
-        <a href="http://www.snapchat.com"> go to Snapchat</a><br>
-    <a href="htttp://www.Tiktok.com"> go to Tiktok</a>
-
+    <div class="box box2">iam samreen sister</div>
     
 </body>
 </html>
