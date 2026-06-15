@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* the specificity of element selector is 1 */
+        h2{
+            color: aqua;
+        }
+         /* the specificity of class selector is 10 */
+        .red{
+            color: blue;
+        }
+         /* the specificity of class selector is 10 */
+        .green{
+            color:blueviolet;
+        }
+         /* the specificity of class selector is 10 */
+        .blue{
+            color:chartreuse;
+        }
+         /* the specificity of inline selector is 100*/
+         h2{
+            color: brown;/* this color is not applied since it as inline style in html*/
+         }
+         /* the specificity inline  selector is 100 eventhough it will not applied because it got over ride by important property*/
+         h4{
+            color: burlywood !important;
+         }
+          /* the specificity of element,class selector is 1+10=11 so h5.yellow color will be implemented since its specificity is 11 
+          when  compared to others.*/
+         h5.yellow{
+            color: rgb(168, 26, 138);
+         }
+        .yellow{
+            color: rgb(15, 239, 101);
+         }
+         .brown{
+            color: rgb(212, 21, 24);
+         }
+         /* the specificity is 41 since it has multiple prperties sample example*/-
+         a.harryclass.rohan-class[href]:hover{
+        color:blue;
+    }
+         
+          </style>
+        
+          
+</head>
+<body>
+    <h2  class="red green blue"> Cascending style sheet</h2>
+    <h3 style="color: rgb(25, 10, 142);">  inline selector</h3>
+    <h4 style="color: cornflowerblue;"> important property</h4>
+    <h5 class="yellow brown"> multiple selector</h5>
+    a.harryclass.rohan-class[href]:hover{
+        color:
+    }
+    
+</body>
+</html>
