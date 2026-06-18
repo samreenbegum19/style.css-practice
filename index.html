@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise2</title>
+    <title>Css sizing</title>
     <style>
-        div>p:first-child{
-            background-color: yellow;
-            color: red;
+        *{
+            margin: 0;
+            padding: 0;
         }
-          div p{
-            background-color: blue;
-            color: white;
+        .box{
+             box-sizing:border-box ;
+            border: 2px solid black;
+           /* width: 283px;*/
+           height: 80vw;
+           width: 80vw;
+           margin: auto;
+            background-color: rgb(95, 103, 210);
         }
-
+        .container{
+            box-sizing:border-box ;
+            border: 2px solid black;
+           /* width: 283px;*/
+           height: 280vh;
+           width: 80vw;
+           margin: auto;
+           background-color: aquamarine;
+        }
+        .mycontainer{
+            color: blue;
+            background-color: snow;
+            border:  2px solid black ;
+            font-size: 22px;
+            width: fit-content;
+            height: max-content;
+       box-sizing: border-box; 
+       min-width: 80vw;
+       width: 50%;
+        }
+        div>p{
+            width: 50%;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
+    <div class="box">
+        css sizing contain px,rem and so on.
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eaque.</p>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, iusto sint! Illo, ipsam quo hic fugiat totam inventore sint voluptatem voluptas natus, autem iste assumenda ad ratione explicabo, id sapiente adipisci nemo accusantium recusandae saepe ipsum? Quia cum aspernatur, accusamus eos minus sunt ratione totam, asperiores quisquam omnis blanditiis quis, tenetur minima nam atque delectus dolorem!</p>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus blanditiis architecto, id asperiores cum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus blanditiis architecto, id asperiores cum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus blanditiis architecto, id asperiores cum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus blanditiis architecto, id asperiores cum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus blanditiis architecto, id asperiores cum?</p>
-
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    </div>
-    <div>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        
-        
-    </div>
+    <div class="mycontainer">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero doloribus earum suscipit. Molestias impedit, hic magni error, eum optio quia enim, vel veritatis at nulla. Ipsum earum atque magni consectetur expedita nulla, veniam ea debitis? Ipsum quisquam asperiores, tempora culpa animi beatae illo porro sunt impedit perspiciatis assumenda molestiae odio saepe atque autem quas minima necessitatibus reiciendis. Molestiae vero repellat error quos iusto velit aliquam, magni suscipit eligendi omnis ratione assumenda ducimus sed excepturi, nisi delectus tenetur? Porro accusamus corrupti nemo fugit error cumque impedit ab, eveniet, at exercitationem laboriosam. Officiis recusandae quasi obcaecati eligendi illum blanditiis saepe, alias non, at sunt modi quia! Ratione officia sed id distinctio fugit tempore pariatur fuga quidem enim officiis ullam nihil dignissimos non, iure dolor modi aliquam quasi reprehenderit obcaecati. Perspiciatis laudantium doloremque suscipit magnam unde iste vitae maiores adipisci, molestias eaque possimus ipsum voluptas cum minus exercitationem placeat natus ducimus nisi nesciunt nulla provident dolor! Earum nemo nisi mollitia. Sit quam omnis culpa aliquid ut molestias voluptate fuga ex, temporibus voluptates, perspiciatis odit error ipsam illo eligendi sequi, minima mollitia distinctio cum beatae id maxime tempora atque? Dolore quam doloribus rerum perspiciatis amet fuga possimus quibusdam commodi reiciendis officia! Quae, numquam vel!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, dolores eligendi quod quis voluptatibus rerum temporibus consectetur. Sed dolores aut consequatur id. At veniam sunt aliquid inventore, voluptatem corporis ratione sapiente tempore debitis, suscipit, quis doloremque ad architecto quisquam adipisci voluptate! Necessitatibus quas quo temporibus tempora nisi suscipit enim? Vitae modi nulla blanditiis impedit error dolores deleniti amet sapiente, expedita culpa delectus dolor velit debitis consequuntur iste sequi voluptates quod distinctio doloribus! Sint similique cum ipsa optio neque architecto. Nulla reiciendis optio nobis quam laborum, et quas amet nisi dolore. Voluptas dolorum ipsum vel corrupti, voluptates accusamus illo blanditiis neque.</p> 
+</div>
+    
     
 </body>
 </html>
