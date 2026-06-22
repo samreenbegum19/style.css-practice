@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css display</title>
+    <title>shadows and outliers</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .shadow{
+            border: 2px solid black;
+            padding: 5px;
+            box-shadow: 2px 1px 3px red;
         }
-        .girl{
-            border: solid black 2px;
-            display:inline-block;
-            padding: 45px;
-            margin: 34px;
+        .text-element{
+            text-shadow: 2px 2px 4px rgb(122, 122, 239);
         }
+        .liers{
+            outline: 2px solid black;
+            border: 2px solid blue;
+        outline-offset:15px;
+        border-radius: 10px;
+
+        }
+            
         
     </style>
 </head>
 <body>
-    <div class="girl">
-        iam a girl.
+    <div class="shadow">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, ipsa.
     </div>
-    <div class="girl">iam a boy.</div>
-    <span>
-        iam another girl.
-    </span>
-    <span>iam a 3rd girl.</span>
+    <div class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </div>
+    <div class="liers">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, ratione.
+    </div>
     
 </body>
 </html>
