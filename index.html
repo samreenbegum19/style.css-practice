@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS list style</title>
-    
+    <title>CSS overflow</title>
     <style>
-nav ul li{
-    list-style-type: "🤣";
-    list-style-position: inside;
-  /*  list-style-image: url(https://media.istockphoto.com/id/1152113369/vector/cartoon-baby-monkey-hanging-on-a-tree-branch.jpg?s=612x612&w=0&k=20&c=z2FuU-cP8Et3OSWuNfGGupY-1ReGFRmP3kgj-gJsiRc=);*/
-    border: 2px solid black;
-    background-color: blue;
-}
+        .box{
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid black;
+           /* overflow: scroll;applies scroll bar horizontally and vertically*/
+            /*overflow: auto; even if neended or not needed it applies scroll bar.*/
+            /*white-space: nowrap;whole text exists in single line,*/
+           /* text-overflow: ellipsis;*/
+          /* overflow: auto;*/
+           /*overflow: hidden;*/
+          /* overflow-x: scroll;*/
+           /*overflow-y: hidden;*/
+           overflow: hidden auto;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-        </ul>
-    </nav>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, ipsam, delectus quidem tenetur dignissimos dolore ducimus odio quibusdam dolorem recusandae esse accusantium error eius debitis fugit obcaecati! Pariatur, dolores omnis facilis hic illo atque fugiat, voluptatem nulla tempora reprehenderit porro assumenda nisi soluta ducimus libero consequatur deleniti praesentium aliquid quod iure! Sunt nulla sit dolores nesciunt ut eum porro voluptatibus, cumque ullam quibusdam totam tempora suscipit ad obcaecati ex amet repudiandae mollitia optio excepturi iste deleniti alias quos aliquam est! Minima animi sit quos, dolorum odio, dignissimos vel saepe adipisci maxime omnis voluptas voluptatum hic excepturi consectetur, eius voluptates? Quaerat!
+    </div>
     
 </body>
 </html>
