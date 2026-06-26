@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS overflow</title>
+    <title>Css property</title>
     <style>
-        .box{
-            width: 50vw;
-            height: 10vh;
+        * {
+            margin: 0;qq
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: rgb(86, 25, 190);
+            /* position: relative;/* position property comes across and for this position must be changed
+            with relative and you should use top ,left nomeans bottom ,right.*/
+            /*top: 44px;
+            left: 25px;*/
+
+        }
+
+        .box2 {
+            background-color: rgb(53, 190, 97);
+        }
+
+        .box3 {
+            background-color: burlywood;
+            position: absolute;
+            top: 4px;
+            right: 15px;
+
+        }
+
+        .box4 {
+            background-color: blueviolet;
+        }
+
+        .box {
+            width: 80vw;
+            height: 133px;
             border: 2px solid black;
-           /* overflow: scroll;applies scroll bar horizontally and vertically*/
-            /*overflow: auto; even if neended or not needed it applies scroll bar.*/
-            /*white-space: nowrap;whole text exists in single line,*/
-           /* text-overflow: ellipsis;*/
-          /* overflow: auto;*/
-           /*overflow: hidden;*/
-          /* overflow-x: scroll;*/
-           /*overflow-y: hidden;*/
-           overflow: hidden auto;
+            margin: 3px;
+            padding: 3px;
+
+
+        }
+
+        .parent {
+            margin: 44px;
+            padding: 154px;
+            border: 3px solid purple;
+            position: absolute;
+            /* since no top,left,bottom and right is assigned now it checks it relatives element.
         }
     </style>
 </head>
+
 <body>
-    <div class="box">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, ipsam, delectus quidem tenetur dignissimos dolore ducimus odio quibusdam dolorem recusandae esse accusantium error eius debitis fugit obcaecati! Pariatur, dolores omnis facilis hic illo atque fugiat, voluptatem nulla tempora reprehenderit porro assumenda nisi soluta ducimus libero consequatur deleniti praesentium aliquid quod iure! Sunt nulla sit dolores nesciunt ut eum porro voluptatibus, cumque ullam quibusdam totam tempora suscipit ad obcaecati ex amet repudiandae mollitia optio excepturi iste deleniti alias quos aliquam est! Minima animi sit quos, dolorum odio, dignissimos vel saepe adipisci maxime omnis voluptas voluptatum hic excepturi consectetur, eius voluptates? Quaerat!
-    </div>
-    
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
 </body>
+
 </html>
