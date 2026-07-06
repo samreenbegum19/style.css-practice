@@ -1,32 +1,21 @@
-*{ 
-    margin: 0;
-    padding: 0;
+h1 h2 h3{
+    background-color: aqua;
+    color: blue;
 }
-:root{
-    --color:purple;
-    --seccolor:rgb(190, 129, 190);
-    --defpad:53px;
-    --defopa:0.3;
-
+p{
+    background-color: brown;
+    color: burlywood;
 }
-.nav{
-    background-color:var(--color);
+li ul ol{
+    background-color: blue;
+    color: brown;
 }
-.container{
-background-color: var(--seccolor);
+table {
+    border: 2px solid black;
+    background-color:pink;
+    color: rgb(185, 216, 6);
 }
-ul li{
-    list-style: none;
-    padding: var(--defpad);
-
+a{
+    background-color: aquamarine;
+    color: orange;
 }
-ul li:first-child{
-   background-color: rgb(216, 133, 24);
-    color: var(--color);
-
-}
-ul{
-     display: flex;
-}
-
-
